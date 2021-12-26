@@ -99,16 +99,16 @@ class _FadeInPageTransition extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    return FadeTransition(
-//      opacity: _opacityAnimation,
-//      child: child,
-//    );
+   return FadeTransition(
+     opacity: _opacityAnimation,
+     child: child,
+   );
 //     return Container(
 //       child: ClipPath(
 //         clipper: ConcentricClipper(progress: _opacityAnimation.value),
 //         child: child,
 //       ),
 //     );
-    return Container( child: ClipPath( clipper: ConcentricClipper(progress: _opacityAnimation.value, radius: 0.0 - 1.0), child: child, ), );
+//     return Container( child: ClipPath( clipper: ConcentricClipper(progress: _opacityAnimation.value, radius: 0.0 - 1.0), child: child, ), );
   }
 }
